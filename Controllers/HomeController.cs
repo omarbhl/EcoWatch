@@ -15,6 +15,7 @@ namespace TP3_EcoWatch.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.UserEmail = HttpContext.Session.GetString("UserEmail");
             return View();
         }
 
